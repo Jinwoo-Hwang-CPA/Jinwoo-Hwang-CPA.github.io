@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jinwoo Hwang 포트폴리오</title>
+<meta name="description" content="회계·재무 문제를 데이터와 AI로 푸는 프로젝트 모음 - Jinwoo Hwang, CPA">
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --text: #0b0b0b; --text2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --s1: #2a78d6; --ring: rgba(11,11,11,0.10);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --text: #ffffff; --text2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --s1: #3987e5; --ring: rgba(255,255,255,0.10);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --text: #ffffff; --text2: #c3c2b7; --muted: #898781;
+  --grid: #2c2c2a; --s1: #3987e5; --ring: rgba(255,255,255,0.10);
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", "Malgun Gothic", sans-serif; line-height: 1.7; }
+main { max-width: 760px; margin: 0 auto; padding: 48px 16px 80px; }
+h1 { font-size: 30px; line-height: 1.3; margin: 0 0 8px; }
+.intro { color: var(--text2); margin: 0 0 32px; }
+.card { display: block; background: var(--surface); border: 1px solid var(--ring); border-radius: 12px;
+  padding: 20px; margin: 16px 0; color: inherit; text-decoration: none; }
+a.card:hover { border-color: var(--s1); }
+.tag { font-size: 13px; color: var(--muted); }
+.card h2 { font-size: 19px; margin: 4px 0 6px; }
+.card p { color: var(--text2); margin: 0 0 8px; }
+.result { color: var(--text); font-weight: 600; }
+.more { color: var(--s1); font-size: 14px; }
+footer { margin-top: 40px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>Jinwoo Hwang, CPA</h1>
+<p class="intro">회계·재무 실무의 질문을 데이터와 AI로 풀어보는 프로젝트 모음입니다. 각 프로젝트는 어떤 문제를 왜 그렇게 풀었는지, 판단이 어떻게 바뀌었는지를 함께 기록합니다.</p>
+
+<a class="card" href="audit-opinion-early-warning/">
+<div class="tag">프로젝트 1 · 지도학습 · DART 공시</div>
+<h2>감사의견 조기경보: 재무비율이 놓치는 것을 공시에서 찾다</h2>
+<p>코스닥 기업 중 올해 처음 감사의견 비적정을 받을 회사를 감사보고서 전에 찾아냅니다. 재무비율 모델은 단순 체크리스트를 넘지 못했지만, 감사기준서에 근거한 공시 이벤트를 더하자 감사보고서 약 6개월 전 시점의 포착률이 올랐습니다.</p>
+<p class="result">매년 위험 상위 10% 검토 시 신규 비적정 포착률 59.5% → 71.6%</p>
+<span class="more">보고서 보기 →</span>
+</a>
+
+<footer>데이터 출처: 금융감독원 DART Open API, 한국거래소 KIND. 학습·연구 목적이며 투자 권유가 아닙니다.</footer>
+</main>
+</body>
+</html>
